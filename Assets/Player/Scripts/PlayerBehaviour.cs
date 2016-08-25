@@ -7,7 +7,7 @@ public class PlayerBehaviour : MonoBehaviour {
 	BoxCollider2D playerCollider;
 	[Range(0.5f,5)]
 	public float attackRange;
-	[Range(10,30)]
+	[Range(5,30)]
 	public float walkSpeed;
 	[Range(0.02f, 0.3f)]
 	public float attackSpeed;
