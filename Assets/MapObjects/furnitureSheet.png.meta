@@ -1,0 +1,1106 @@
+fileFormatVersion: 2
+guid: 2556ecad34371a845bb3d747f14a0def
+timeCreated: 1472146065
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: furnitureSheet_0
+    21300002: furnitureSheet_1
+    21300004: furnitureSheet_2
+    21300006: furnitureSheet_3
+    21300008: furnitureSheet_4
+    21300010: furnitureSheet_5
+    21300012: furnitureSheet_6
+    21300014: furnitureSheet_7
+    21300016: furnitureSheet_8
+    21300018: furnitureSheet_9
+    21300020: furnitureSheet_10
+    21300022: furnitureSheet_11
+    21300024: furnitureSheet_12
+    21300026: furnitureSheet_13
+    21300028: furnitureSheet_14
+    21300030: furnitureSheet_15
+    21300032: furnitureSheet_16
+    21300034: furnitureSheet_17
+    21300036: furnitureSheet_18
+    21300038: furnitureSheet_19
+    21300040: furnitureSheet_20
+    21300042: furnitureSheet_21
+    21300044: furnitureSheet_22
+    21300046: furnitureSheet_23
+    21300048: furnitureSheet_24
+    21300050: furnitureSheet_25
+    21300052: furnitureSheet_26
+    21300054: furnitureSheet_27
+    21300056: furnitureSheet_28
+    21300058: furnitureSheet_29
+    21300060: furnitureSheet_30
+    21300062: furnitureSheet_31
+    21300064: furnitureSheet_32
+    21300066: furnitureSheet_33
+    21300068: furnitureSheet_34
+    21300070: furnitureSheet_35
+    21300072: furnitureSheet_36
+    21300074: furnitureSheet_37
+    21300076: furnitureSheet_38
+    21300078: furnitureSheet_39
+    21300080: furnitureSheet_40
+    21300082: furnitureSheet_41
+    21300084: furnitureSheet_42
+    21300086: furnitureSheet_43
+    21300088: furnitureSheet_44
+    21300090: furnitureSheet_45
+    21300092: furnitureSheet_46
+    21300094: furnitureSheet_47
+    21300096: furnitureSheet_48
+    21300098: furnitureSheet_49
+    21300100: furnitureSheet_50
+    21300102: furnitureSheet_51
+    21300104: furnitureSheet_52
+    21300106: furnitureSheet_53
+    21300108: furnitureSheet_54
+    21300110: furnitureSheet_55
+    21300112: furnitureSheet_56
+    21300114: furnitureSheet_57
+    21300116: furnitureSheet_58
+    21300118: furnitureSheet_59
+    21300120: furnitureSheet_60
+    21300122: furnitureSheet_61
+    21300124: furnitureSheet_62
+    21300126: furnitureSheet_63
+    21300128: furnitureSheet_64
+    21300130: furnitureSheet_65
+    21300132: furnitureSheet_66
+    21300134: furnitureSheet_67
+    21300136: furnitureSheet_68
+    21300138: furnitureSheet_69
+    21300140: furnitureSheet_70
+    21300142: furnitureSheet_71
+    21300144: furnitureSheet_72
+    21300146: furnitureSheet_73
+    21300148: furnitureSheet_74
+    21300150: furnitureSheet_75
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: furnitureSheet_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 504
+        width: 33
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 495
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 486
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 486
+        width: 27
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_4
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 435
+        width: 27
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_5
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 435
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.5, y: -27}
+        - {x: 19.5, y: 17}
+        - {x: 17.5, y: 27}
+        - {x: -19.5, y: 27}
+        - {x: -19.5, y: -27}
+    - name: furnitureSheet_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 477
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_7
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 477
+        width: 33
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 468
+        width: 39
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_9
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 420
+        width: 93
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.5, y: 27}
+        - {x: -46.5, y: -18}
+        - {x: -45.5, y: -27}
+        - {x: 46.5, y: -27}
+        - {x: 46.5, y: 9}
+        - {x: 31.5, y: 27}
+    - name: furnitureSheet_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 459
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_11
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 459
+        width: 33
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_12
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 453
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_13
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 450
+        width: 33
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_14
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 438
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_15
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 435
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_16
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 399
+        width: 93
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.5, y: 27}
+        - {x: -46.5, y: -18}
+        - {x: -45.5, y: -27}
+        - {x: 46.5, y: -27}
+        - {x: 46.5, y: 9}
+        - {x: 31.5, y: 27}
+    - name: furnitureSheet_17
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 441
+        width: 45
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_18
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 432
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_19
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 432
+        width: 39
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_20
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 411
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_21
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 393
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_22
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 372
+        width: 27
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_23
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 372
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 27}
+        - {x: -16.5, y: -27}
+        - {x: 16.5, y: -27}
+        - {x: 16.5, y: 1}
+        - {x: 9.5, y: 27}
+    - name: furnitureSheet_24
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 372
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.5, y: -27}
+        - {x: 19.5, y: 17}
+        - {x: 17.5, y: 27}
+        - {x: -19.5, y: 27}
+        - {x: -19.5, y: -27}
+    - name: furnitureSheet_25
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 306
+        width: 69
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: 52.5}
+        - {x: -34.5, y: -52.5}
+        - {x: 34.5, y: -52.5}
+        - {x: 34.5, y: 52.5}
+    - name: furnitureSheet_26
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 369
+        width: 15
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_27
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 396
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_28
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 396
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_29
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 381
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_30
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 351
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_31
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 345
+        width: 96
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 22.5}
+        - {x: -48, y: -22.5}
+        - {x: 47, y: -22.5}
+        - {x: 48, y: 1.5}
+        - {x: 48, y: 22.5}
+    - name: furnitureSheet_32
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 363
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_33
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 363
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_34
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 363
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_35
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 363
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_36
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 363
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_37
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 363
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_38
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 306
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.5, y: -27}
+        - {x: 19.5, y: 17}
+        - {x: 17.5, y: 27}
+        - {x: -19.5, y: 27}
+        - {x: -19.5, y: -27}
+    - name: furnitureSheet_39
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 351
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_40
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 309
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 27}
+        - {x: -16.5, y: -27}
+        - {x: 16.5, y: -27}
+        - {x: 16.5, y: 1}
+        - {x: 9.5, y: 27}
+    - name: furnitureSheet_41
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 309
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 27}
+        - {x: -16.5, y: -27}
+        - {x: 16.5, y: -27}
+        - {x: 16.5, y: 1}
+        - {x: 9.5, y: 27}
+    - name: furnitureSheet_42
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 309
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.5, y: -27}
+        - {x: 19.5, y: 17}
+        - {x: 17.5, y: 27}
+        - {x: -19.5, y: 27}
+        - {x: -19.5, y: -27}
+    - name: furnitureSheet_43
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 351
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_44
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 342
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_45
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 342
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_46
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 342
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_47
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 309
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 19.5}
+        - {x: -22.5, y: -19.5}
+        - {x: 21.5, y: -19.5}
+        - {x: 22.5, y: -1.5}
+        - {x: 22.5, y: 19.5}
+    - name: furnitureSheet_48
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 324
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_49
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 342
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_50
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 306
+        width: 96
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_51
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 324
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_52
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 324
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_53
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 312
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_54
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 303
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_55
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 303
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_56
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 288
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_57
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 192
+        width: 69
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: 52.5}
+        - {x: -34.5, y: -52.5}
+        - {x: 34.5, y: -52.5}
+        - {x: 34.5, y: 52.5}
+    - name: furnitureSheet_58
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 192
+        width: 69
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: 52.5}
+        - {x: -34.5, y: -52.5}
+        - {x: 34.5, y: -52.5}
+        - {x: 34.5, y: 52.5}
+    - name: furnitureSheet_59
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 192
+        width: 69
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: 52.5}
+        - {x: -34.5, y: -52.5}
+        - {x: 34.5, y: -52.5}
+        - {x: 34.5, y: 52.5}
+    - name: furnitureSheet_60
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 255
+        width: 96
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 22.5}
+        - {x: -48, y: -22.5}
+        - {x: 47, y: -22.5}
+        - {x: 48, y: 1.5}
+        - {x: 48, y: 22.5}
+    - name: furnitureSheet_61
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 273
+        width: 96
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_62
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 288
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_63
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 288
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_64
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 249
+        width: 78
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39, y: 18}
+        - {x: -39, y: 7}
+        - {x: -34, y: -18}
+        - {x: 31, y: -18}
+        - {x: 39, y: -14}
+        - {x: 39, y: 18}
+    - name: furnitureSheet_65
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 192
+        width: 105
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52.5, y: -26}
+        - {x: 52.5, y: 14}
+        - {x: 18.5, y: 30}
+        - {x: -48.5, y: 30}
+        - {x: -52.5, y: 16}
+        - {x: -52.5, y: -26}
+        - {x: -48.5, y: -30}
+        - {x: 48.5, y: -30}
+    - name: furnitureSheet_66
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 219
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_67
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 192
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 18}
+        - {x: -19.5, y: -18}
+        - {x: 18.5, y: -18}
+        - {x: 19.5, y: -2}
+        - {x: 19.5, y: 18}
+    - name: furnitureSheet_68
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 192
+        width: 93
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.5, y: 27}
+        - {x: -46.5, y: -18}
+        - {x: -45.5, y: -27}
+        - {x: 46.5, y: -27}
+        - {x: 46.5, y: 9}
+        - {x: 31.5, y: 27}
+    - name: furnitureSheet_69
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 192
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: furnitureSheet_70
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 114
+        width: 207
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103.5, y: 30}
+        - {x: -103.5, y: -30}
+        - {x: 103.5, y: -30}
+        - {x: 103.5, y: 28}
+        - {x: 75.5, y: 30}
+    - name: furnitureSheet_71
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 114
+        width: 207
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103.5, y: 30}
+        - {x: -103.5, y: -30}
+        - {x: 103.5, y: -30}
+        - {x: 103.5, y: 12}
+        - {x: 77.5, y: 30}
+    - name: furnitureSheet_72
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 114
+        width: 105
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52.5, y: -26}
+        - {x: 52.5, y: 14}
+        - {x: 18.5, y: 30}
+        - {x: -48.5, y: 30}
+        - {x: -52.5, y: 16}
+        - {x: -52.5, y: -26}
+        - {x: -48.5, y: -30}
+        - {x: 48.5, y: -30}
+    - name: furnitureSheet_73
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 114
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 18}
+        - {x: -19.5, y: -18}
+        - {x: 18.5, y: -18}
+        - {x: 19.5, y: -2}
+        - {x: 19.5, y: 18}
+    - name: furnitureSheet_74
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 33
+        width: 207
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -99.5, y: 33}
+        - {x: -103.5, y: 21}
+        - {x: -103.5, y: -33}
+        - {x: 103.5, y: -33}
+        - {x: 103.5, y: 17}
+        - {x: 67.5, y: 33}
+    - name: furnitureSheet_75
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 33
+        width: 207
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103.5, y: 30}
+        - {x: -103.5, y: -30}
+        - {x: 103.5, y: -30}
+        - {x: 103.5, y: 12}
+        - {x: 77.5, y: 30}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,7 +5,7 @@ public class PlayerBehaviour : MonoBehaviour {
 	Rigidbody2D rbtd;
 	Transform AttackCollider;
 	BoxCollider2D playerCollider;
-	[Range(0.5f,1)]
+	[Range(0.5f,5)]
 	public float attackRange;
 	[Range(10,30)]
 	public float walkSpeed;
@@ -40,7 +40,7 @@ public class PlayerBehaviour : MonoBehaviour {
 		if (rbtd.velocity.y == 0)
 			Jumping = false;
 
-		if (Input.GetKey (KeyCode.S) ) {
+		if (Input.GetKey (KeyCode.S) ) { //çömelme
 			AdjustColliders ();
 			if (Input.GetKeyDown (KeyCode.A) && !Rolling) {
 				Rolling = true;
@@ -61,11 +61,11 @@ public class PlayerBehaviour : MonoBehaviour {
 			}
 			if (Input.GetKey (KeyCode.A) && rbtd.velocity.magnitude <= (walkSpeed * Vector2.left).magnitude) {
 				rbtd.AddForce (Vector2.left * 500);
-				playerDir = Direction.LEFT;
+				playerDir = Direction.LEFT; //sola yürüme
 			} //flip sprite
 			else if (Input.GetKey (KeyCode.D) && rbtd.velocity.magnitude <= (walkSpeed * Vector2.right).magnitude){
 				rbtd.AddForce (Vector2.right * 500);
-				playerDir = Direction.RIGHT;
+				playerDir = Direction.RIGHT; //sağa yürüme
 			} //flip sprite
 		}
 	}
@@ -95,13 +95,6 @@ public class PlayerBehaviour : MonoBehaviour {
 		AttackCollider.GetComponent<BoxCollider2D> ().offset = new Vector2 (0, 0);
 	}
 
-	void OnTriggerStay2D(Collider2D other){
-		if (other.gameObject.tag == "Wind") {
-			if(other.transform.position.x < transform.position.x)
-				rbtd.AddForce (Vector2.right * 200);
-			else
-				rbtd.AddForce (Vector2.left * 200);
-		}
-	}
+
 
 }
