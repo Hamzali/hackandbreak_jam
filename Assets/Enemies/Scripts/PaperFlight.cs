@@ -11,7 +11,7 @@ public class PaperFlight : MonoBehaviour {
 	void Start () {
 		spitForce = Random.Range (300, 800);
 		rbtd = GetComponent<Rigidbody2D> ();
-		player = GameObject.FindGameObjectWithTag ("Player");
+		player = GameObject.Find ("MainPlayer");
 		if (player.transform.position.x > gameObject.transform.position.x) //Player is to the RIGHT of toaster
 			rbtd.AddForce (new Vector2 (spitForce, 100));
 		else

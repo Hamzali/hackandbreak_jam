@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CoffeeMachineBehaviour : MonoBehaviour {
 	public GameObject DeathCoffee;
+	GameObject player;
 	[Range(1, 3)]
 	public float spitFreq;
 	float time;
@@ -11,7 +12,7 @@ public class CoffeeMachineBehaviour : MonoBehaviour {
 	int i;
 	// Use this for initialization
 	void Start () {
-		
+		player = GameObject.Find ("MainPlayer");
 	}
 	
 	// Update is called once per frame

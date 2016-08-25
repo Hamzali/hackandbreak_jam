@@ -13,7 +13,7 @@ public class ToastMachineBehaviour : MonoBehaviour {
 	float time;
 	// Use this for initialization
 	void Start () {
-		player = GameObject.FindGameObjectWithTag ("Player");
+		player = GameObject.Find ("MainPlayer");
 		rbtd = GetComponent<Rigidbody2D> ();
 	}
 	

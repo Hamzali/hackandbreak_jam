@@ -16,7 +16,7 @@ public class ComputerBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		attackSpeed = 0.2f;
-		ActualPlayer = GameObject.FindGameObjectWithTag ("Player");
+		ActualPlayer = GameObject.Find ("MainPlayer");
 		Mouse = transform.FindChild ("Mouse").gameObject;
 		Keyboard = transform.FindChild ("Keyboard").gameObject;
 	}

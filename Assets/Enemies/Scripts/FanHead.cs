@@ -3,19 +3,16 @@ using System.Collections;
 
 public class FanHead : MonoBehaviour {
 	GameObject Player;
-	[Range(200, 400)]
+	[Range(200, 300)]
 	public int WindPower;
 	// Use this for initialization
 	void Start () {
-		Player = GameObject.FindGameObjectWithTag ("Player");
+		Player = GameObject.Find ("MainPlayer");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Player.transform.position.x > gameObject.transform.position.x) //Player is to the RIGHT of toaster
-			transform.rotation = Quaternion.Euler (0, 0, 0);
-		else
-			transform.rotation = Quaternion.Euler (0, 180, 0);
+		
 	}
 
 	void OnTriggerStay2D(Collider2D other){
