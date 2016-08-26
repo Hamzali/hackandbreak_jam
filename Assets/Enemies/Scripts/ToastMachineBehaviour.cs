@@ -13,7 +13,9 @@ public class ToastMachineBehaviour : MonoBehaviour {
 	[Range(0,20)]
 	public int toastLife;
 	float time;
-	// Use this for initialization
+
+    Animator anim;
+    // Use this for initialization
 	void Start () {
 		player = GameObject.Find ("MainPlayer");
 		rbtd = GetComponent<Rigidbody2D> ();

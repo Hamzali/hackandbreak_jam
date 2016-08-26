@@ -55,7 +55,7 @@ public class ComputerBehaviour : MonoBehaviour {
 				if (grabbedPlayer == null && !missed) {
 				
 					ThrowMouse ();
-                    anim.SetTrigger("computerAttack");
+                    
 				}
 				
 				if (grabbedPlayer == null && missed)
@@ -147,4 +147,7 @@ public class ComputerBehaviour : MonoBehaviour {
 			ActualPlayer.GetComponent<Rigidbody2D>().AddForce(new Vector2(smackForce, 0));
 		}
 	}
+    void OnCollisionStay2D(Collision2D other){
+     anim.SetTrigger("computerSmack");
+    }
 }

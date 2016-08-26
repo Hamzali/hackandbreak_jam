@@ -16,7 +16,7 @@ public class BossFightSpawner : MonoBehaviour {
 		time += Time.deltaTime;
 		mock = Random.Range (0, 5);
 		if (time >= 3 && mock <= 1) {
-			Instantiate (Toaster, new Vector2 (0, 5), Quaternion.identity);
+			Instantiate (Toaster, new Vector2 (5, 5), Quaternion.identity);
 			Terminal.changeText (1);
 			time = 0;
 		} else if (time >= 3 && mock > 1) {

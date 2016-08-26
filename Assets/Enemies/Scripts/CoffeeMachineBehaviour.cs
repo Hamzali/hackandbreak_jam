@@ -28,6 +28,10 @@ public class CoffeeMachineBehaviour : MonoBehaviour {
 			SpitDeadlyCoffee ();
             anim.SetTrigger("coffeeAttack");
         }
+
+        if(coffeeLife <= 0) {
+            Destroy(gameObject);
+        }
 	}
 
 	void SpitDeadlyCoffee(){

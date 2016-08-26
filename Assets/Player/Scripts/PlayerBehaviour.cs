@@ -37,24 +37,36 @@ public class PlayerBehaviour : MonoBehaviour {
 		time += Time.deltaTime;
 		WalkControls ();
 		AttackControls ();
+
+        if (playerLife <= 0) {
+            anim.SetBool("Die", true);
+            playerCollider.size = new Vector2 (0.14f, 0.14f);
+            playerCollider.offset = new Vector2 (0, -0.14f);
+            AttackCollider.GetComponent<BoxCollider2D> ().offset = new Vector2 (0, -0.14f);
+            GetComponent<PlayerBehaviour>().enabled = false;
+        }
+            
 	}
 
 	void WalkControls(){
-
+        anim.SetBool("Crouch", Crouch);
+        anim.SetBool("Jump", Jumping);
+        
+        print(Crouch);
 		if (rbtd.velocity.magnitude == Vector2.zero.magnitude) { 
 			Rolling = false;
-            
         }
+        if(Input.GetKeyUp (KeyCode.S) && Crouch) {
+            Crouch = false;
+        }
+
 		if (rbtd.velocity.y == 0) { 
 			Jumping = false;
-            anim.speed = 1;
         }
-        if (Input.GetKeyUp (KeyCode.S) )
-            anim.speed = 1;
+        
 		if (Input.GetKey (KeyCode.S) ) { //çömelme
 			AdjustColliders ();
-            anim.SetTrigger("Crouch");
-            anim.speed = 0;
+
             Crouch = true;
 			if (Input.GetKeyDown (KeyCode.A) && !Rolling) { // dönüyorum
 				Rolling = true;
@@ -77,10 +89,7 @@ public class PlayerBehaviour : MonoBehaviour {
                     gameObject.transform.localScale = scale;
                 }
 				playerDir = Direction.RIGHT;
-			} else if(Input.GetKeyUp (KeyCode.S) && !Crouch) {
-                Crouch = false;
-            }
-            
+			}
 			//RollAnimation
 		} else {
 			ReAdjustColliders ();
@@ -88,7 +97,6 @@ public class PlayerBehaviour : MonoBehaviour {
 				Jumping = true;
 				rbtd.AddForce (Vector2.up * 4000);
                 anim.SetTrigger("Jump");
-                anim.speed = 0;
 				//JumpAnimation
 			}
 			if (Input.GetKey (KeyCode.A) && rbtd.velocity.magnitude <= (walkSpeed * Vector2.left).magnitude) {
@@ -122,11 +130,9 @@ public class PlayerBehaviour : MonoBehaviour {
 			attacktime = time;
             if(Crouch == false) { 
                 anim.SetTrigger("playerPunch");
-                anim.speed = 0;
             }
             else{
                 anim.SetTrigger("crouchPunch");
-                anim.speed = 1;
                 Crouch = false;
             }
 			if (playerDir == Direction.LEFT)
@@ -136,9 +142,7 @@ public class PlayerBehaviour : MonoBehaviour {
 		} else if (true) {
 			AttackCollider.transform.position = gameObject.transform.position;
 			time = 0;
-		}else if (Input.GetKeyUp (KeyCode.Space)) {
-             anim.speed = 1;
-        }
+		}
 	}
 
 	void AdjustColliders(){
@@ -167,7 +171,7 @@ public class PlayerBehaviour : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "Coffee")
-			playerLife -= 1;
+			playerLife -= 5;
 	}
 
 }

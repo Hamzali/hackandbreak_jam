@@ -8,10 +8,10 @@ public class Terminal : MonoBehaviour {
 	int i, lineCount;
 
 	string[] texts = {
-		"echo \"Hello, World!\"\n>Hello, World! \n>Computer.Protect();",
-		"Toaster.SetActive(true);",
+		"echo \"Hello, World!\"\n>Hello, World! \n>BobsPC.Protect();",
+		"Instantiate (Toaster, new Vector2 (5, 5), Quaternion.identity);",
 		"BobsPC.InTheFace();",
-		"echo \"Oh my..\"\n>Oh my..",
+		"_ _ _",
 		"BurnInCoffee();",
 		"Clear();"
 	};
@@ -39,7 +39,7 @@ public class Terminal : MonoBehaviour {
 			//Behey
 		}
 
-		if (lineCount > 15)
+		if (lineCount > 10)
 			clearText ();
 
 		if (Computer == null)
