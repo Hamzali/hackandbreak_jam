@@ -3,13 +3,14 @@ using System.Collections;
 
 public class ComputerBehaviour : MonoBehaviour {
 	GameObject Mouse, Keyboard;
+	Rigidbody2D rbtd;
 	public GameObject grabbedPlayer;
 	GameObject ActualPlayer;
 	[Range(0.5f,2)]
 	public float attackRange;
-	bool missed;
+	bool missed, hitPlayer;
 	float time, attacktime, attackSpeed;
-	int randomAttack;
+	public int randomAttack;
 	enum Direction {LEFT, RIGHT};
 	Direction playerDir;
 	Direction mouseDir;
@@ -19,6 +20,8 @@ public class ComputerBehaviour : MonoBehaviour {
 		ActualPlayer = GameObject.Find ("MainPlayer");
 		Mouse = transform.FindChild ("Mouse").gameObject;
 		Keyboard = transform.FindChild ("Keyboard").gameObject;
+		Mouse.GetComponent<BoxCollider2D> ().enabled = false;
+		rbtd = GetComponent<Rigidbody2D> ();
 	}
 	
 	// Update is called once per frame
@@ -26,15 +29,29 @@ public class ComputerBehaviour : MonoBehaviour {
 		time += Time.deltaTime;
 
 		WhereIsHe ();
+		if (randomAttack == 0) {
+			if (time >= 2) {
+				if (grabbedPlayer == null && !missed) {
+				
+					ThrowMouse ();
+				}
+				
+				if (grabbedPlayer == null && missed)
+					PullBack ();
+			}
 
-		if (time >= 2) {
-			if (grabbedPlayer == null && !missed)
-				ThrowMouse ();
-			if (grabbedPlayer == null && missed)
-				PullBack ();
+			if (grabbedPlayer != null)
+				PullPlayer ();
+
+			if (hitPlayer)
+				KeyboardSmack ();
+		} else if (randomAttack >= 1) {
+			if (ActualPlayer.transform.position.x > gameObject.transform.position.x) //Player is to the RIGHT of toaster
+				rbtd.AddForce (new Vector2 (5000, 5000));
+			else
+				rbtd.AddForce (new Vector2 (-5000, 5000));
+			randomAttack = Random.Range (0, 5);
 		}
-		if (grabbedPlayer != null)
-			PullPlayer ();
 	}
 
 	void WhereIsHe(){
@@ -47,10 +64,11 @@ public class ComputerBehaviour : MonoBehaviour {
 	#region MousePhase
 	void ThrowMouse(){
 		if (Vector2.Distance (transform.position, Mouse.transform.position) < 10 && grabbedPlayer == null) {
+			Mouse.GetComponent<BoxCollider2D> ().enabled = true;
 			if (playerDir == Direction.RIGHT)
-				Mouse.transform.Translate (Vector2.right);
+				Mouse.transform.Translate (Vector2.right/2);
 			else if (playerDir == Direction.LEFT)
-				Mouse.transform.Translate (Vector2.left);
+				Mouse.transform.Translate (Vector2.left/2);
 		}
 		else
 			missed = true;
@@ -65,8 +83,12 @@ public class ComputerBehaviour : MonoBehaviour {
 				Mouse.transform.Translate (Vector2.right);
 				grabbedPlayer.transform.Translate (Vector2.right);
 			}
-		} else
+		} else {
 			missed = false;
+			Mouse.GetComponent<BoxCollider2D> ().enabled = false;
+			grabbedPlayer = null;
+		}
+			
 	}
 
 	void PullBack(){
@@ -81,6 +103,7 @@ public class ComputerBehaviour : MonoBehaviour {
 			else
 				Mouse.transform.Translate (Vector2.right);
 		} else {
+			randomAttack = Random.Range (0, 5);
 			missed = false;
 			time = 0;
 		}
@@ -88,13 +111,15 @@ public class ComputerBehaviour : MonoBehaviour {
 	#endregion
 
 	void KeyboardSmack(){
-		attacktime = time;
-		if (playerDir == Direction.LEFT)
-			Keyboard.transform.Translate (Vector2.left * attackRange);
+		if (playerDir == Direction.LEFT) {
+			Keyboard.transform.position = new Vector2(transform.position.x + Vector2.left.x * attackRange, transform.position.y);
+		}
 		else
-			Keyboard.transform.Translate (Vector2.right * attackRange);
-		if (time >= attacktime + attackSpeed) {
+			Keyboard.transform.position = new Vector2(transform.position.x + Vector2.right.x * attackRange, transform.position.y);
+		if (time >= attacktime + attackSpeed) {	
 			Keyboard.transform.position = gameObject.transform.position;
+			randomAttack = Random.Range (0, 5);
+			hitPlayer = false;
 			time = 0;
 		}
 	}
@@ -103,10 +128,12 @@ public class ComputerBehaviour : MonoBehaviour {
 		if(other.gameObject.tag == "Player")
 			grabbedPlayer = other.gameObject;
 	}
-	void OnCollisionEnter2D(Collision2D other){
+	void OnCollisionStay2D(Collision2D other){
 		if (other.gameObject.tag == "Player") {
-			grabbedPlayer = null;
+			
 			time = 0;
+			attacktime = 0;
+			hitPlayer = true;
 		}
 	}
 }
