@@ -53,9 +53,8 @@ public class ComputerBehaviour : MonoBehaviour {
 		if (randomAttack == 0) {
 			if (time >= 2) {
 				if (grabbedPlayer == null && !missed) {
-				
+				    anim.SetTrigger("computerAttack");
 					ThrowMouse ();
-                    
 				}
 				
 				if (grabbedPlayer == null && missed)
@@ -88,9 +87,9 @@ public class ComputerBehaviour : MonoBehaviour {
 		if (Vector2.Distance (transform.position, Mouse.transform.position) < 4 && grabbedPlayer == null) {
 			Mouse.GetComponent<BoxCollider2D> ().enabled = true;
 			if (playerDir == Direction.RIGHT)
-				Mouse.transform.Translate (Vector2.right/2);
+				Mouse.transform.Translate (Vector2.right/5);
 			else if (playerDir == Direction.LEFT)
-				Mouse.transform.Translate (Vector2.left/2);
+				Mouse.transform.Translate (Vector2.left/5);
 		}
 		else
 			missed = true;
@@ -110,7 +109,6 @@ public class ComputerBehaviour : MonoBehaviour {
 			Mouse.GetComponent<BoxCollider2D> ().enabled = false;
 			grabbedPlayer = null;
 		}
-			
 	}
 
 	void PullBack(){
@@ -143,11 +141,17 @@ public class ComputerBehaviour : MonoBehaviour {
 			time = 0;
 			attacktime = 0;
 			hitPlayer = true;
-            anim.SetTrigger("computerSmack");
-			ActualPlayer.GetComponent<Rigidbody2D>().AddForce(new Vector2(smackForce, 0));
 		}
 	}
     void OnCollisionStay2D(Collision2D other){
-     anim.SetTrigger("computerSmack");
-    }
+         
+        if(other.gameObject.tag == "Player") { 
+            anim.SetTrigger("computerSmack");
+             if (other.gameObject.transform.position.x > transform.position.x)
+		        ActualPlayer.GetComponent<Rigidbody2D>().AddForce (new Vector2 (2000, 0));
+		    else
+			    ActualPlayer.GetComponent<Rigidbody2D>().AddForce (new Vector2 (-2000, 0));
+        }
+     }
+
 }

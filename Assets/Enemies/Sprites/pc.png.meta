@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0787b5594ec145e4cb8fecb272ac9cdd
-timeCreated: 1472193527
+timeCreated: 1472216883
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -60,27 +60,28 @@ TextureImporter:
     - name: pc_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 106
+        x: 5
+        y: 51
         width: 36
-        height: 43
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 1, y: 18.5}
-        - {x: -8, y: 18.5}
+      - - {x: 4, y: 17.5}
+        - {x: -4, y: 17.5}
         - {x: -18, y: 11.5}
-        - {x: -18, y: -17.5}
-        - {x: -16, y: -21.5}
-        - {x: 9, y: -21.5}
-        - {x: 18, y: -7.5}
-        - {x: 18, y: 5.5}
-        - {x: 8, y: 16.5}
-      - - {x: -2, y: 19.5}
+        - {x: -18, y: -16.5}
+        - {x: -15, y: -24.5}
+        - {x: 0, y: -24.5}
+        - {x: 6, y: -20.5}
+        - {x: 18, y: -3.5}
+        - {x: 18, y: 2.5}
+      - - {x: -5, y: 17.5}
+        - {x: -2, y: 18.5}
         - {x: -2, y: 21.5}
-        - {x: -7, y: 21.5}
-        - {x: -5, y: 18.5}
+        - {x: -5, y: 22.5}
+        - {x: -7, y: 20.5}
     - name: pc_1
       rect:
         serializedVersion: 2
@@ -108,25 +109,26 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 50
-        width: 34
-        height: 46
+        y: 106
+        width: 35
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 20}
-        - {x: -17, y: 19}
-        - {x: -17, y: -17}
-        - {x: -16, y: -23}
-        - {x: 4, y: -23}
-        - {x: 17, y: -10}
-        - {x: 17, y: 13}
-        - {x: 8, y: 20}
-      - - {x: -1, y: 21}
-        - {x: -1, y: 23}
-        - {x: -6, y: 23}
-        - {x: -4, y: 20}
+      - - {x: -8.5, y: 15.5}
+        - {x: -17.5, y: 9.5}
+        - {x: -17.5, y: -23.5}
+        - {x: -14.5, y: -24.5}
+        - {x: 13.5, y: -24.5}
+        - {x: 17.5, y: -21.5}
+        - {x: 17.5, y: 5.5}
+        - {x: 12.5, y: 15.5}
+      - - {x: -5.5, y: 15.5}
+        - {x: -2.5, y: 16.5}
+        - {x: -2.5, y: 19.5}
+        - {x: -5.5, y: 20.5}
+        - {x: -7.5, y: 18.5}
     - name: pc_3
       rect:
         serializedVersion: 2
@@ -200,24 +202,24 @@ TextureImporter:
         serializedVersion: 2
         x: 220
         y: 3
-        width: 34
+        width: 44
         height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -4, y: 18.5}
-        - {x: -17, y: 12.5}
-        - {x: -17, y: -17.5}
-        - {x: -12, y: -21.5}
-        - {x: 13, y: -21.5}
-        - {x: 17, y: -9.5}
-        - {x: 17, y: 6.5}
-        - {x: 6, y: 18.5}
-      - - {x: -1, y: 19.5}
-        - {x: -1, y: 21.5}
+      - - {x: -11, y: 18.5}
+        - {x: -22, y: 12.5}
+        - {x: -22, y: -17.5}
+        - {x: -17, y: -21.5}
+        - {x: 6, y: -21.5}
+        - {x: 14, y: -8.5}
+        - {x: 14, y: 6.5}
+        - {x: 2, y: 18.5}
+      - - {x: -6, y: 19.5}
         - {x: -6, y: 21.5}
-        - {x: -4, y: 18.5}
+        - {x: -11, y: 21.5}
+        - {x: -9, y: 18.5}
     outline: []
   spritePackingTag: 
   userData: 

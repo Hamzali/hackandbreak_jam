@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour {
 	GameObject Wall;
@@ -24,6 +24,6 @@ public class ButtonScript : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.gameObject.tag == "Player")
-			EditorSceneManager.LoadScene (1);
+			SceneManager.LoadScene (1);
 	}
 }

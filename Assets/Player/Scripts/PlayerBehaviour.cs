@@ -159,20 +159,17 @@ public class PlayerBehaviour : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.gameObject.tag == "Keyboard") {
-			if (other.gameObject.transform.position.x < transform.position.x)
-				rbtd.AddForce (Vector2.right * 2000);
-			else
-				rbtd.AddForce (Vector2.left * 2000);
-			playerLife -= 1;
-		}
-
-		
-	}
-
-	void OnCollisionEnter2D(Collision2D other){
-		if (other.gameObject.tag == "Coffee")
+		if (other.gameObject.tag == "Keyboard") { 
 			playerLife -= 5;
+		}
 	}
+
+    
+	void OnCollisionEnter2D(Collision2D other){
+        if (other.gameObject.tag == "Coffee")
+            playerLife -= 1;
+	}
+
+    
 
 }

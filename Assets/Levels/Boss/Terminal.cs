@@ -20,7 +20,7 @@ public class Terminal : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		terminalText.text = ">";
+		terminalText.text = "root@Bob:~# ";
 		currText = texts [0];
 		i = 0; 
 	}
@@ -55,7 +55,7 @@ public class Terminal : MonoBehaviour {
 
 	void clearText(){
 		changeText (5);
-		terminalText.text = ">";
+		terminalText.text = " ";
 		lineCount = 0;
 	}
 }
