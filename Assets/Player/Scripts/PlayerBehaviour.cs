@@ -12,6 +12,8 @@ public class PlayerBehaviour : MonoBehaviour {
 	public float walkSpeed;
 	[Range(0.02f, 0.3f)]
 	public float attackSpeed;
+	[Range(0,100)]
+	public int playerLife;
 	bool Rolling, Jumping, Crouch;
 	enum Direction {LEFT, RIGHT};
 	Direction playerDir;
@@ -116,7 +118,7 @@ public class PlayerBehaviour : MonoBehaviour {
 	}
 
 	void AttackControls(){
-		if (Input.GetKey (KeyCode.Space)) {
+		if (Input.GetKeyDown (KeyCode.Space)) {
 			attacktime = time;
             if(Crouch == false) { 
                 anim.SetTrigger("playerPunch");
@@ -128,10 +130,10 @@ public class PlayerBehaviour : MonoBehaviour {
                 Crouch = false;
             }
 			if (playerDir == Direction.LEFT)
-				AttackCollider.transform.Translate (Vector2.left * attackRange);
+				AttackCollider.transform.Translate (Vector2.left/2 * attackRange);
 			else
-				AttackCollider.transform.Translate (Vector2.right * attackRange);
-		} else if (time >= attacktime + attackSpeed) {
+				AttackCollider.transform.Translate (Vector2.right/2 * attackRange);
+		} else if (true) {
 			AttackCollider.transform.position = gameObject.transform.position;
 			time = 0;
 		}else if (Input.GetKeyUp (KeyCode.Space)) {
@@ -151,6 +153,21 @@ public class PlayerBehaviour : MonoBehaviour {
 		AttackCollider.GetComponent<BoxCollider2D> ().offset = new Vector2 (0, 0);
 	}
 
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.gameObject.tag == "Keyboard") {
+			if (other.gameObject.transform.position.x < transform.position.x)
+				rbtd.AddForce (Vector2.right * 2000);
+			else
+				rbtd.AddForce (Vector2.left * 2000);
+			playerLife -= 1;
+		}
 
+		
+	}
+
+	void OnCollisionEnter2D(Collision2D other){
+		if (other.gameObject.tag == "Coffee")
+			playerLife -= 1;
+	}
 
 }

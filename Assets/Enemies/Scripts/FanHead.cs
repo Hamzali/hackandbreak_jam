@@ -8,6 +8,10 @@ public class FanHead : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Player = GameObject.Find ("MainPlayer");
+		if (Player.transform.position.x > gameObject.transform.position.x) //Player is to the RIGHT of toaster
+			transform.rotation = Quaternion.Euler(0,0,0);
+		else
+			transform.rotation = Quaternion.Euler(0,180,0);
 	}
 	
 	// Update is called once per frame

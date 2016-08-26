@@ -10,6 +10,8 @@ public class ToastMachineBehaviour : MonoBehaviour {
 	public float jumpForce;
 	[Range(0.5f, 2)]
 	public float jumpFreq;
+	[Range(0,20)]
+	public int toastLife;
 	float time;
 	// Use this for initialization
 	void Start () {
@@ -27,6 +29,9 @@ public class ToastMachineBehaviour : MonoBehaviour {
 
 		if (time >= jumpFreq)
 			ToasterLeap ();
+
+		if (toastLife <= 0)
+			Destroy (gameObject);
 	}
 
 	void ToasterLeap(){
@@ -35,5 +40,10 @@ public class ToastMachineBehaviour : MonoBehaviour {
 		} else
 			rbtd.AddForce (new Vector2 (jumpForce, jumpForce));
 		time = 0;
+	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.gameObject.tag == "Punch")
+			toastLife -= 1;
 	}
 }

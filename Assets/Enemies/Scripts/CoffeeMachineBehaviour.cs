@@ -11,6 +11,8 @@ public class CoffeeMachineBehaviour : MonoBehaviour {
     float time;
 	[Range(3, 10)]
 	public int maximumParticles;
+	[Range(0,20)]
+	public int coffeeLife;
 	int i;
 	// Use this for initialization
 	void Start () {
@@ -36,5 +38,9 @@ public class CoffeeMachineBehaviour : MonoBehaviour {
 			i = 0;
 			time = 0;
 		}
+	}
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.gameObject.tag == "Punch")
+			coffeeLife -= 1;
 	}
 }

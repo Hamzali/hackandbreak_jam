@@ -10,7 +10,9 @@ public class ComputerBehaviour : MonoBehaviour {
 	public float attackRange;
 	bool missed, hitPlayer;
 	float time, attacktime, attackSpeed;
-	public int randomAttack;
+	[Range(0, 100)]
+	public int maxLife;
+	int randomAttack;
 	enum Direction {LEFT, RIGHT};
 	Direction playerDir;
 	Direction mouseDir;
@@ -26,6 +28,9 @@ public class ComputerBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (maxLife <= 0)
+			Destroy (gameObject);
+
 		time += Time.deltaTime;
 
 		WhereIsHe ();
@@ -127,10 +132,11 @@ public class ComputerBehaviour : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.gameObject.tag == "Player")
 			grabbedPlayer = other.gameObject;
+		if (other.gameObject.tag == "Punch")
+			maxLife -= 1;
 	}
 	void OnCollisionStay2D(Collision2D other){
 		if (other.gameObject.tag == "Player") {
-			
 			time = 0;
 			attacktime = 0;
 			hitPlayer = true;

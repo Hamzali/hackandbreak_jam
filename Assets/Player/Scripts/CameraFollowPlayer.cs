@@ -9,7 +9,7 @@ public class CameraFollowPlayer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		thisCamera = GetComponent<Camera> ();
-		moveCamera = thisCamera.ScreenToWorldPoint (new Vector3(Screen.width, 0, 0));
+		moveCamera = thisCamera.ScreenToWorldPoint (new Vector3(Screen.width - 50, 0, 0));
 		//moveCamera = 18;
 	}
 	
