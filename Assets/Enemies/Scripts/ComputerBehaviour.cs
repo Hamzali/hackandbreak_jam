@@ -4,7 +4,7 @@ using System.Collections;
 public class ComputerBehaviour : MonoBehaviour {
 	GameObject Mouse, Keyboard;
 	Rigidbody2D rbtd;
-	private GameObject grabbedPlayer;
+	public GameObject grabbedPlayer;
 	GameObject ActualPlayer;
 	[Range(0.5f,2)]
 	public float attackRange;
@@ -144,7 +144,7 @@ public class ComputerBehaviour : MonoBehaviour {
 			attacktime = 0;
 			hitPlayer = true;
             anim.SetTrigger("computerSmack");
-            grabbedPlayer.GetComponent<Rigidbody2D>().AddForce(new Vector2(smackForce, 0));
+			ActualPlayer.GetComponent<Rigidbody2D>().AddForce(new Vector2(smackForce, 0));
 		}
 	}
 }
