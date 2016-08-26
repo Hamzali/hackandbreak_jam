@@ -11,17 +11,22 @@ public class ComputerBehaviour : MonoBehaviour {
 	bool missed, hitPlayer;
 	float time, attacktime, attackSpeed;
 	[Range(0, 100)]
-	public int maxLife;
+	public int maxLife = 50;
 	int randomAttack;
 	enum Direction {LEFT, RIGHT};
 	Direction playerDir;
-	Direction mouseDir;
-	// Use this for initialization
+	Direction mouseDir, computerDir;
+    public float smackForce;
+    Animator anim;
+
+    // Use this for initialization
 	void Start () {
-		attackSpeed = 0.2f;
+        anim = GetComponent<Animator>();
+        attackSpeed = 0.2f;
 		ActualPlayer = GameObject.Find ("MainPlayer");
 		Mouse = transform.FindChild ("Mouse").gameObject;
-		Keyboard = transform.FindChild ("Keyboard").gameObject;
+        computerDir = Direction.RIGHT;
+        Keyboard = transform.FindChild ("Keyboard").gameObject;
 		Mouse.GetComponent<BoxCollider2D> ().enabled = false;
 		rbtd = GetComponent<Rigidbody2D> ();
 	}
@@ -34,11 +39,23 @@ public class ComputerBehaviour : MonoBehaviour {
 		time += Time.deltaTime;
 
 		WhereIsHe ();
+        if(computerDir != playerDir) {
+                Vector3 scale = gameObject.transform.localScale;
+                scale.x *= -1;
+                gameObject.transform.localScale = scale;
+                if(computerDir == Direction.LEFT) {
+                    computerDir = Direction.RIGHT;
+                } else {
+                    computerDir = Direction.LEFT;
+                }
+                
+            }
 		if (randomAttack == 0) {
 			if (time >= 2) {
 				if (grabbedPlayer == null && !missed) {
 				
 					ThrowMouse ();
+                    anim.SetTrigger("computerAttack");
 				}
 				
 				if (grabbedPlayer == null && missed)
@@ -48,10 +65,9 @@ public class ComputerBehaviour : MonoBehaviour {
 			if (grabbedPlayer != null)
 				PullPlayer ();
 
-			if (hitPlayer)
-				KeyboardSmack ();
+			
 		} else if (randomAttack >= 1) {
-			if (ActualPlayer.transform.position.x > gameObject.transform.position.x) //Player is to the RIGHT of toaster
+			if (ActualPlayer.transform.position.x > gameObject.transform.position.x) //Player is to the RIGHT of Computer
 				rbtd.AddForce (new Vector2 (5000, 5000));
 			else
 				rbtd.AddForce (new Vector2 (-5000, 5000));
@@ -60,15 +76,16 @@ public class ComputerBehaviour : MonoBehaviour {
 	}
 
 	void WhereIsHe(){
-		if (ActualPlayer.transform.position.x > gameObject.transform.position.x) //Player is to the RIGHT of toaster
-			playerDir = Direction.RIGHT;
-		else
+		if (ActualPlayer.transform.position.x > gameObject.transform.position.x) { //Player is to the RIGHT of Computer
+            playerDir = Direction.RIGHT;
+        } else {
 			playerDir = Direction.LEFT;
+        }
 	}
 
 	#region MousePhase
 	void ThrowMouse(){
-		if (Vector2.Distance (transform.position, Mouse.transform.position) < 10 && grabbedPlayer == null) {
+		if (Vector2.Distance (transform.position, Mouse.transform.position) < 4 && grabbedPlayer == null) {
 			Mouse.GetComponent<BoxCollider2D> ().enabled = true;
 			if (playerDir == Direction.RIGHT)
 				Mouse.transform.Translate (Vector2.right/2);
@@ -115,31 +132,19 @@ public class ComputerBehaviour : MonoBehaviour {
 	}
 	#endregion
 
-	void KeyboardSmack(){
-		if (playerDir == Direction.LEFT) {
-			Keyboard.transform.position = new Vector2(transform.position.x + Vector2.left.x * attackRange, transform.position.y);
-		}
-		else
-			Keyboard.transform.position = new Vector2(transform.position.x + Vector2.right.x * attackRange, transform.position.y);
-		if (time >= attacktime + attackSpeed) {	
-			Keyboard.transform.position = gameObject.transform.position;
-			randomAttack = Random.Range (0, 5);
-			hitPlayer = false;
-			time = 0;
-		}
-	}
-
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.gameObject.tag == "Player")
 			grabbedPlayer = other.gameObject;
 		if (other.gameObject.tag == "Punch")
 			maxLife -= 1;
 	}
-	void OnCollisionStay2D(Collision2D other){
+	void OnCollisionEnter2D(Collision2D other){
 		if (other.gameObject.tag == "Player") {
 			time = 0;
 			attacktime = 0;
 			hitPlayer = true;
+            anim.SetTrigger("computerSmack");
+			ActualPlayer.GetComponent<Rigidbody2D>().AddForce(new Vector2(smackForce, 0));
 		}
 	}
 }

@@ -17,16 +17,31 @@ public class ToastMachineBehaviour : MonoBehaviour {
 	void Start () {
 		player = GameObject.Find ("MainPlayer");
 		rbtd = GetComponent<Rigidbody2D> ();
+        toasterDir = Direction.RIGHT;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		time += Time.deltaTime;
-		if (player.transform.position.x > gameObject.transform.position.x) //Player is to the RIGHT of toaster
-			toasterDir = Direction.RIGHT;
-		else
-			toasterDir = Direction.LEFT;
+        
+        if (player.transform.position.x > gameObject.transform.position.x) { //Player is to the RIGHT of toaster
+            if(toasterDir == Direction.LEFT) {
+                Vector3 scale = gameObject.transform.localScale;
+                scale.x *= -1;
+                gameObject.transform.localScale = scale;
+            }
+            toasterDir = Direction.RIGHT;
+        }
+		else {
+            if(toasterDir == Direction.RIGHT) {
+                Vector3 scale = gameObject.transform.localScale;
+                scale.x *= -1;
+                gameObject.transform.localScale = scale;
+            }
+            toasterDir = Direction.LEFT;
 
+        }
+        
 		if (time >= jumpFreq)
 			ToasterLeap ();
 
