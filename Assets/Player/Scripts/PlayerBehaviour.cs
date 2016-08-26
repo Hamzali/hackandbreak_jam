@@ -43,7 +43,8 @@ public class PlayerBehaviour : MonoBehaviour {
             playerCollider.size = new Vector2 (0.14f, 0.14f);
             playerCollider.offset = new Vector2 (0, -0.14f);
             AttackCollider.GetComponent<BoxCollider2D> ().offset = new Vector2 (0, -0.14f);
-            GetComponent<PlayerBehaviour>().enabled = false;
+            playerCollider.GetComponent<Rigidbody2D>().isKinematic = true;
+            //GetComponent<PlayerBehaviour>().enabled = false;
         }
             
 	}
