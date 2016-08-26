@@ -6,12 +6,15 @@ public class CoffeeMachineBehaviour : MonoBehaviour {
 	GameObject player;
 	[Range(1, 3)]
 	public float spitFreq;
-	float time;
+
+    Animator anim;
+    float time;
 	[Range(3, 10)]
 	public int maximumParticles;
 	int i;
 	// Use this for initialization
 	void Start () {
+        anim = GetComponent<Animator>();
 		player = GameObject.Find ("MainPlayer");
 	}
 	
@@ -19,8 +22,10 @@ public class CoffeeMachineBehaviour : MonoBehaviour {
 	void Update () {
 		time += Time.deltaTime;
 
-		if (time >= spitFreq)
+		if (time >= spitFreq) { 
 			SpitDeadlyCoffee ();
+            anim.SetTrigger("coffeeAttack");
+        }
 	}
 
 	void SpitDeadlyCoffee(){
