@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0160ea922c7ac374e812c249046187c6
-timeCreated: 1472141413
+timeCreated: 1472162856
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -70,7 +70,7 @@ TextureImporter:
         width: 17
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: character_1
@@ -81,7 +81,7 @@ TextureImporter:
         width: 17
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: character_2
@@ -92,7 +92,7 @@ TextureImporter:
         width: 28
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: character_3
@@ -103,7 +103,7 @@ TextureImporter:
         width: 15
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: character_4
@@ -114,7 +114,7 @@ TextureImporter:
         width: 19
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: character_5
@@ -125,7 +125,7 @@ TextureImporter:
         width: 19
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: character_6
@@ -136,64 +136,69 @@ TextureImporter:
         width: 31
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: character_7
       rect:
         serializedVersion: 2
-        x: 5
-        y: 25
+        x: 2
+        y: 3
         width: 21
-        height: 31
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: character_8
       rect:
         serializedVersion: 2
-        x: 30
-        y: 25
+        x: 27
+        y: 3
         width: 30
-        height: 31
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: character_9
       rect:
         serializedVersion: 2
-        x: 68
-        y: 25
+        x: 65
+        y: 3
         width: 29
-        height: 37
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: character_10
       rect:
         serializedVersion: 2
-        x: 116
-        y: 25
+        x: 113
+        y: 3
         width: 22
-        height: 33
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: character_11
       rect:
         serializedVersion: 2
-        x: 154
-        y: 25
+        x: 151
+        y: 3
         width: 46
-        height: 9
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -23, y: -11}
+        - {x: -23, y: -22}
+        - {x: 23, y: -22}
+        - {x: 23, y: -17}
+        - {x: 16, y: -11}
     outline: []
   spritePackingTag: 
   userData: 
